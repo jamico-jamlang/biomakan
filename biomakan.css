@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family:"Roboto" ,Arial, Helvetica, sans-serif;
+
+}
+
+/*for nav bar*/
+
+.logo-container{
+    justify-content: center;
+    display: flex;
+    padding-left: 3rem;
+
+}
+
+.navbar{
+    background-color: white !important;
+    box-shadow: -1px 4px 10px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: -1px 4px 10px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: -1px 4px 10px 0px rgba(0,0,0,0.25);
+}
+
+
+
+
+
+.nav-link{
+    color: black !important;
+    padding: 1rem 2rem !important;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .nav-link{
+        padding: 1rem 1rem;
+    }
+
+    .logo-container{
+        display: flex; 
+        position: relative;
+        justify-content: center;
+        margin: 1rem auto;
+        padding-right: 3rem;
+    }
+    
+
+}
+
+@media only screen and (max-width: 600px){
+
+
+    .hero-text h1{    
+        font-size: 2.5rem;
+    }
+
+    .logo-container{
+        display: flex; 
+        position: relative;
+        justify-content: center;
+        margin: 1rem auto;
+        padding-right: 6rem;
+    }
+}
+
+
+@media only screen and (min-width: 600px){
+
+    .logo-container{
+        display: flex; 
+        position: relative;
+        justify-content: center;
+        margin: 1rem auto;
+        padding-right: 5rem;
+    }
+
+    .hero-text h1{    
+        font-size: 3rem;
+    }
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .logo-container{
+        padding-right: 0rem;
+    }
+
+    .nav-link{
+        padding: 1rem 0.5rem;
+    }
+    
+    .hero-text h1{
+        font-size: 3.5rem;
+    }
+
+    .navbar-nav{
+        margin: 0.5rem 10rem 0.5rem !important;
+    }
+
+}
+
+/*for hero part*/
+
+.hero-container{
+    position:relative; 
+    display: flex; 
+}
+
+.hero-text{
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+.hero-container{
+    background-image:  url(agribackground_2.jpg); 
+    background-size: cover; 
+    height: 75vh;
+}
+
+.hero-text{
+    background-color: black;
+    width: 100%;
+    opacity: 0.65;
+}
+
+.hero-text h1{
+    color: white; 
+
+    font-weight: bold;
+}
+
+/*section 2 story*/
+
+h2{
+    text-align: center;
+    padding-top: 6rem;
+    font-weight: bolder !important;
+    font-size: 3rem !important;
+}
+
+/*for Jumbotron
+
+#jumbotron{
+    background-image: url(agribackground.jpg); 
+    background-size: ;
+    color: white;   
+    height: 100vh;
+}
+
+#inlineFormInputGroupUsername{
+    width: 320px; 
+}
+
+.btn-primary{
+    padding: 0.4rem 3.5rem; 
+}
+
+.container{
+    margin-top: 2rem;
+}
+*/
