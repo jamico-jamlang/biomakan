@@ -10,8 +10,7 @@ body{
 
 }
 
-/*for nav bar*/
-
+/*for nav bar start*/
 .logo-container{
     justify-content: center;
     display: flex;
@@ -26,35 +25,38 @@ body{
     -moz-box-shadow: -1px 4px 10px 0px rgba(0,0,0,0.25);
 }
 
-
-
-
-
 .nav-link{
     color: black !important;
     padding: 1rem 2rem !important;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .nav-link{
-        padding: 1rem 1rem;
-    }
 
-    .logo-container{
-        display: flex; 
-        position: relative;
-        justify-content: center;
-        margin: 1rem auto;
-        padding-right: 3rem;
-    }
-    
+ul.navbar-nav li {
+    list-style: none;
+    display: inline-block;
+    padding-bottom:2px; /*the space for the gradient*/
+    background: linear-gradient(#357717,#357717) center bottom; /*OR bottom right OR bottom left*/
+    background-size: 0% 1px; /*width:0% height:2px*/
+    background-repeat:no-repeat; /* Don't repeat !!*/
+    transition: all 0.45s;
+}
+  
+  
+ul.navbar-nav li:hover {
+    background-size: 70% 2px; /*width:100% height:2px*/
+}
+/*for nav bar end*/
 
+ul{
+    list-style: none;
+    display: flex; 
+    justify-content: space-around !important;
+    gap: 2em;
 }
 
+
+/* for phone screen*/
 @media only screen and (max-width: 600px){
-
-
     .hero-text h1{    
         font-size: 2.5rem;
     }
@@ -66,11 +68,25 @@ body{
         margin: 1rem auto;
         padding-right: 6rem;
     }
+
+    .nav-link{
+        text-align: center;
+    }
+    
+    .second-solution{
+        flex-direction: column-reverse !important;
+    }
+
+    #cta>h2{
+        font-size: 2.5rem !important;
+        max-width: 90%;
+        margin: 7rem auto;
+    }
+    
 }
 
 
 @media only screen and (min-width: 600px){
-
     .logo-container{
         display: flex; 
         position: relative;
@@ -81,32 +97,65 @@ body{
 
     .hero-text h1{    
         font-size: 3rem;
+    } 
+
+    .text-container{
+        max-width: 41rem; 
+        margin: 0 3rem;
     }
+
+    #cta{
+        max-width: 70%;
+        margin: 7rem auto;
+    }
+
+
     
+    /*
+    .second-solution{
+        flex-direction: column-reverse !important;
+    }*/
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .logo-container{
+        display: flex; 
+        position: relative;
+        justify-content: center;
+        margin: 1rem auto;
+        padding-right: 1rem;
+    }
+
+}
+
+
+
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .logo-container{
-        padding-right: 0rem;
+        padding-right: 4rem;
     }
 
-    .nav-link{
-        padding: 1rem 0.5rem;
-    }
-    
     .hero-text h1{
         font-size: 3.5rem;
     }
 
     .navbar-nav{
-        margin: 0.5rem 10rem 0.5rem !important;
+        margin: 0.5rem auto ;
+    }
+
+    .navbar-collapse{
+        padding-right: 12rem;
     }
 
 }
 
-/*for hero part*/
 
+
+/*for hero part*/
 .hero-container{
     position:relative; 
     display: flex; 
@@ -119,6 +168,10 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center; 
+    /*to cover the image with opaque layer*/
+    background-color: black;
+    width: 100%;
+    opacity: 0.65;
 }
 
 .hero-container{
@@ -127,45 +180,97 @@ body{
     height: 75vh;
 }
 
-.hero-text{
-    background-color: black;
-    width: 100%;
-    opacity: 0.65;
-}
 
-.hero-text h1{
+.hero-text>h1{
     color: white; 
-
     font-weight: bold;
 }
+/*-----hero part end-----*/
 
-/*section 2 story*/
+
+
+/*-----section 2 story start-----*/
 
 h2{
     text-align: center;
-    padding-top: 6rem;
     font-weight: bolder !important;
     font-size: 3rem !important;
 }
 
-/*for Jumbotron
-
-#jumbotron{
-    background-image: url(agribackground.jpg); 
-    background-size: ;
-    color: white;   
-    height: 100vh;
+.story>h2{
+    padding-top: 6rem;
 }
 
-#inlineFormInputGroupUsername{
-    width: 320px; 
+#laboratory{
+    height: 20rem; 
+    border-radius: 50%;
 }
 
-.btn-primary{
-    padding: 0.4rem 3.5rem; 
+#farmers{
+    max-height: 20rem;
+    border-radius: 15%;
+    /*border-top-left-radius: 15%;
+    border-bottom-right-radius: 15%;*/
 }
 
-.container{
-    margin-top: 2rem;
+b{
+    color:#357717;
 }
-*/
+
+.story-container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: row;
+    margin: 2rem auto;
+    justify-content: center;
+}
+
+
+
+.section-text{
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.contact-container{
+
+    margin: 3rem auto;
+    color: #357717;
+    font-weight: bold;
+    border-radius: 5%;
+    text-align: center;
+
+
+}
+
+.contact-container>p{
+    font-size: 1.7rem;
+}
+/*----section 2 story start-----*/
+
+
+
+/*footer*/
+.footer-container{
+    display: flex !important; 
+    align-items: center !important;
+    justify-content: center !important;
+
+
+}
+
+.footer-inside-container{
+
+    display: flex!important; 
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.text-body-secondary{
+    margin: auto 0.5rem;
+
+}
