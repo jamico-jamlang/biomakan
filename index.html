@@ -17,20 +17,19 @@
     <nav class="navbar navbar-expand-lg" style="background-color: #000">
         
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="logo-container">
                 <img src="Biomakan_logo-removebg-preview.png" alt="biomakan" height="30">
             </div>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02" >
-                
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >         
                 <ul class="navbar-nav flex-column flex-sm-row">
                     <li class="nav-item"><a id="nav1" class="nav-link fw-semibold flex-sm-fill text-sm-center active" aria-current="page" href="#">Home</a></li>
-                    <li class="nav-item"><a id="nav2" class="nav-link fw-semibold flex-sm-fill text-sm-center" href="#locations">Our Story</a></li>
-                    <li class="nav-item"><a id="nav3" class="nav-link fw-semibold " href="#rates">Our Solution</a></li>
-                    <li class="nav-item"><a id="nav4" class="nav-link fw-semibold " href="#party-package">Our Team</a></li>
-                    <li class="nav-item"><a id="nav5" class="nav-link fw-semibold " href="#contact-us">Contact Us</a></li>
+                    <li class="nav-item"><a id="nav2" class="nav-link fw-semibold flex-sm-fill text-sm-center" href="#story">Our Story</a></li>
+                    <li class="nav-item"><a id="nav3" class="nav-link fw-semibold " href="#solution">Our Solution</a></li>
+                    <!--<li class="nav-item"><a id="nav4" class="nav-link fw-semibold " href="#party-package">Our Team</a></li>-->
+                    <li class="nav-item"><a id="nav5" class="nav-link fw-semibold " href="#cta">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -47,74 +46,61 @@
 
     <!--Our Story-->
     <section class="story">
-        <h2>OUR STORY</h2>
+        <h2 id="story">OUR STORY</h2>
         <div class="story-container">
-
+            <div class="story-container">
+                <div class="story-picture-container">
+                    <img id="farmers" src="Indonesian Farmer.jpg" alt="farmers">
+                </div>
+                <div class="text-container">
+                    <p class="section-text">More than 80% of global poor or around 500 million households globally are farmers or rely on farming for their daily lives. And these farmers suffer further more due to farm waste loss with unsellable harvests and lower market demand, new goverment standards and regulations, and high cost of commercial feed additives and fertilizers. We ourselves experienced these with our families that came from farming in Southeast Asia. <br><b>And we want to solve these.</b></p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!--Our Solution-->
     <section class="solution">
-        <h2>OUR SOLUTION</h2>
-        <div class="solution-container">
-
+        <h2 id="solution">OUR SOLUTION</h2>
+        <div class="story-container">
+            <div class="solution-picture-container">
+                <img id="laboratory" src="laboratory.jpg" alt="biomakan">
+            </div>
+            <div class="text-container">
+                <p class="section-text">Creating a new class of bacterial culture that has the ability to transform different food waste to post-biotic products that could be utilized for different purposes such as feed additive for poultry, bovine, seafood, pets, etc., and as fertilizer for agriculture needs</p>
+            </div>
+        </div>
+        <div class="story-container" id="second-solution">
+            <div class="text-container">
+                <p class="section-text">Providing these high value farm products at lower cost than commercial ones to farmers by either enabling them to make it own their own using their waste products or buying the post-biotic products directly from us while selling their farm scraps in exchange.</p>
+            </div>
+            <div class="solution-picture-container">
+                <img id="laboratory" src="topvet farmer.png" alt="biomakan">
+            </div>
         </div>
     </section>
 
-      <!--Our Solution-->
-      <section class="solution">
-        <h2>OUR TEAM</h2>
-        <div class="solution-container">
-
+    <!--Our Solution-->
+    <section class="solution" id="cta">
+        <h2>JOIN US IN HELPING SMALL SCALE FARMERS UTILIZE THEIR WASTE AND TRANSFORM THEM TO HIGH VALUE FARM PRODUCTS!</h2>
+        <div class="contact-container">
+            <p>Contact or email us at biomakan.finland@gmail.com</p>
         </div>
     </section>
 
 
-    <!--for Jumbotron
-    <div class="container-fluid py-4" id="jumbotron">
-        <h1 class="display-2 fw-bold">Custom jumbotron</h1>
-        <p class="col-md-12 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-        
-            <form class="row row-cols-lg-auto g-3 align-items-center">
-                <div class="col-10">
-                <label class="visually-hidden" for="inlineFormInputGroupUsername">Email</label>
-                <div class="input-group">
-                    <div class="input-group-text">@</div>
-                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Email">
-                </div>
-                </div>
-        
-                <div class="col-12">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="inlineFormCheck">
-                        <label class="form-check-label" for="inlineFormCheck">
-                        Remember me
-                        </label>
-                    </div>
-                </div>
-            
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-            </form>
-    </div>-->
 
 
     <!--footer-->
     <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <footer class="py-2 my-4 border-top footer-container">
+          <div class="col-md-4 footer-inside-container">
+                <a href="#" class="text-body-secondary text-decoration-none lh-1">
                     <img src="Biomakan_logo-removebg-preview.png" alt="biomakan" height="20">
                 </a>
-                <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 Company, Inc</span>
+                <span class="text-body-secondary">&copy; 2023 Company, Inc</span>
           </div>
-      
-          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-          </ul>
+    
         </footer>
     </div>
       
